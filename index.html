@@ -295,15 +295,71 @@ proteins.</p>
 <ul>
 <li><span class="cem">10 803 231 nanopublications</span></li>
 <li>378 654 287 triples</li>
-<li>61 184 484 in the assertion triples</li>
-<li>122 229 003 in the provenance triples</li>
-<li>136 738 995 in the publication info triples</li>
+<li>61 184 484 assertion triples</li>
+<li>122 229 003 provenance triples</li>
+<li>136 738 995 publication info triples</li>
 <li><span class="cem">Average size of nanopublication: 35.1 triples</span></li>
 </ul>
 </section>
 
+<section data-transition="slide none">
+<h3>FAIR, FAIRer, Nanopublications</h3>
+<ul>
+<li><span class="cem">Findable</span></li>
+<li><span class="cem">Accessible</span></li>
+<li><span class="cem">Interoperable</span></li>
+<li><span class="cem">Reusable</span></li>
+</ul>
+</section>
+
+<section data-transition="none">
+<h3>FAIR, FAIRer, Nanopublications</h3>
+<ul>
+<li><span class="cem2">Findable ✓</span> (trusty URIs, API) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+<li><span class="cem">Accessible</span></li>
+<li><span class="cem">Interoperable</span></li>
+<li><span class="cem">Reusable</span></li>
+</ul>
+</section>
+
+<section data-transition="none">
+<h3>FAIR, FAIRer, Nanopublications</h3>
+<ul>
+<li><span class="cem2">Findable ✓</span> (trusty URIs, API) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+<li><span class="cem2">Accessible ✓</span> (server network)</li>
+<li><span class="cem">Interoperable</span></li>
+<li><span class="cem">Reusable</span></li>
+</ul>
+</section>
+
+<section data-transition="none">
+<h3>FAIR, FAIRer, Nanopublications</h3>
+<ul>
+<li><span class="cem2">Findable ✓</span> (trusty URIs, API) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+<li><span class="cem2">Accessible ✓</span> (server network)</li>
+<li><span class="cem2">Interoperable ✓</span> (RDF)</li>
+<li><span class="cem">Reusable</span></li>
+</ul>
+</section>
+
+<section data-transition="none">
+<h3>FAIR, FAIRer, Nanopublications</h3>
+<ul>
+<li><span class="cem2">Findable ✓</span> (trusty URIs, API) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+<li><span class="cem2">Accessible ✓</span> (server network)</li>
+<li><span class="cem2">Interoperable ✓</span> (RDF)</li>
+<li><span class="cem2">Reusable ✓</span> (provenance, license, ...)</li>
+</ul>
+</section>
+
+<section>
+<h3>Small Standardized Containers</h3>
+<img class="plain stretch" src="img/containers.jpg"/>
+</section>
+
 <section>
 <h3>Analysis with SPARQL</h3>
+<p><span class="cem2">Distribution of Licenses:</span></p>
 <pre>
 prefix npx: &lt;http://purl.org/nanopub/x/&gt;
 prefix dc: &lt;http://purl.org/dc/terms/&gt
@@ -341,7 +397,23 @@ select (count(distinct ?np) as ?count) ?license where {
 
 <section>
 <h3>Distribution of Types</h3>
+<p><span class="cem2">What types are used in the assertions of nanopublications?</span></p>
+<code>... rdf:type ?</code>
+<p><span class="cem2">Most frequent (> 8M):</span></p>
+<small><code>eco:ECO_0000218 ("manual assertion")</code></small>
+<p><span class="cem2">Many occur just once, e.g.:</span></p>
+<small><code>https://www.inaturalist.org/taxa/104422 ("Spotted Spreadwing")</code></small>
+</section>
+
+<section>
+<h3><span class="cem2">Distribution of Types</span></h3>
 <img class="plain stretch" src="img/typedist.png"/>
+</section>
+
+<section>
+<h3>Nanopublication API</h3>
+<img class="plain stretch" src="img/api.png"/>
+<p><small><a href="http://grlc.io/api/peta-pico/nanopub-api/">http://grlc.io/api/peta-pico/nanopub-api/</a></small></p>
 </section>
 
 <section>
@@ -365,22 +437,6 @@ np get -c -o data.trig \
   <span class="cem2">RAcf4tihZLL_aK81hwThIrNxjOhks4sEloBStEgzyR1tI</span>
 # Run analysis here
 </pre>
-</section>
-
-<section>
-<h3>Nanopublication API</h3>
-<img class="plain stretch" src="img/api.png"/>
-<p><small><a href="http://grlc.io/api/peta-pico/nanopub-api/">http://grlc.io/api/peta-pico/nanopub-api/</a></small></p>
-</section>
-
-<section>
-<h3>FAIR</h3>
-<ul>
-<li>Findable</li>
-<li>Accessible</li>
-<li>Interoperable</li>
-<li>Reusable</li>
-</ul>
 </section>
 
 <section>
