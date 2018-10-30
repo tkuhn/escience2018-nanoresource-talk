@@ -304,52 +304,62 @@ proteins.</p>
 
 <section data-transition="slide none">
 <h3>FAIR, FAIRer, Nanopublications</h3>
+<div style="text-align: left; margin-left:3cm;">
 <ul>
 <li><span class="cem">Findable</span></li>
 <li><span class="cem">Accessible</span></li>
 <li><span class="cem">Interoperable</span></li>
 <li><span class="cem">Reusable</span></li>
 </ul>
+</div>
 </section>
 
 <section data-transition="none">
 <h3>FAIR, FAIRer, Nanopublications</h3>
+<div style="text-align: left; margin-left:3cm;">
 <ul>
-<li><span class="cem2">Findable ✓</span> (trusty URIs, API) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+<li><span class="cem2">Findable ✓</span> (trusty URIs, API)</li>
 <li><span class="cem">Accessible</span></li>
 <li><span class="cem">Interoperable</span></li>
 <li><span class="cem">Reusable</span></li>
 </ul>
+</div>
 </section>
 
 <section data-transition="none">
 <h3>FAIR, FAIRer, Nanopublications</h3>
+<div style="text-align: left; margin-left:3cm;">
 <ul>
-<li><span class="cem2">Findable ✓</span> (trusty URIs, API) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+<li><span class="cem2">Findable ✓</span> (trusty URIs, API)</li>
 <li><span class="cem2">Accessible ✓</span> (server network)</li>
 <li><span class="cem">Interoperable</span></li>
 <li><span class="cem">Reusable</span></li>
 </ul>
+</div>
 </section>
 
 <section data-transition="none">
 <h3>FAIR, FAIRer, Nanopublications</h3>
+<div style="text-align: left; margin-left:3cm;">
 <ul>
-<li><span class="cem2">Findable ✓</span> (trusty URIs, API) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+<li><span class="cem2">Findable ✓</span> (trusty URIs, API)</li>
 <li><span class="cem2">Accessible ✓</span> (server network)</li>
 <li><span class="cem2">Interoperable ✓</span> (RDF)</li>
 <li><span class="cem">Reusable</span></li>
 </ul>
+</div>
 </section>
 
 <section data-transition="none">
 <h3>FAIR, FAIRer, Nanopublications</h3>
+<div style="text-align: left; margin-left:3cm;">
 <ul>
-<li><span class="cem2">Findable ✓</span> (trusty URIs, API) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+<li><span class="cem2">Findable ✓</span> (trusty URIs, API)</li>
 <li><span class="cem2">Accessible ✓</span> (server network)</li>
 <li><span class="cem2">Interoperable ✓</span> (RDF)</li>
 <li><span class="cem2">Reusable ✓</span> (provenance, license, ...)</li>
 </ul>
+</div>
 </section>
 
 <section>
@@ -372,7 +382,7 @@ select (count(distinct ?np) as ?count) ?license where {
     ?np np:hasPublicationInfo ?i .
   }
   graph ?i {
-        ?np (dct:license|dct:rights) ?license .
+        ?np (<span class="cem2">dct:license|dct:rights</span>) ?license .
   }
 } group by ?license order by ?count
 </pre>
@@ -406,7 +416,7 @@ select (count(distinct ?np) as ?count) ?license where {
 </section>
 
 <section>
-<h3><span class="cem2">Distribution of Types</span></h3>
+<h3><span class="cem2">Diversity of Types</span></h3>
 <img class="plain stretch" src="img/typedist.png"/>
 </section>
 
